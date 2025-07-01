@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to MRU!!</h1>
+    Enter Full Amount: <input type="number" name="fa" id="fa" onkeyup="calc()"><br><br>
+    Enter Paid Amount: <input type="number" name="pa" id="pa" onkeyup="calc()"><br><br>
+    Enter Due Amount: <input type="number" name="da" id="da" readonly>
+    <span id="emsg" style="color: red;"></span>
+    <script>
+        function calc() {
+            var x = parseFloat(document.getElementById("fa").value) || 0;
+            var y = parseFloat(document.getElementById("pa").value) || 0;
+            var z = x - y;
+            document.getElementById("da").value = z;
+
+            if (z < 0) {
+                document.getElementById("emsg").innerHTML = "Invalid Amount";
+            } else {
+                document.getElementById("emsg").innerHTML = "";
+            }
+        }
+    </script>
+</body>
+</html>

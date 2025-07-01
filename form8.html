@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greatest of three number: </title>
+</head>
+<body>
+    <h1>Greatest of three number: </h1>
+    <form action="" method="post">
+        Enter a value : <input type="text" name="a" id="a"><br><br>
+        Enter b value : <input type="text" name="b" id="b"><br><br>
+        Enter c value : <input type="text" name="c" id="c"><br><br>
+        <input type="submit" onclick="return calc()" value="submit">
+        <h2 id="result"></h2>
+    </form>
+    <script>
+        function calc() {
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        var c= document.getElementById("c").value;
+        var result=document.getElementById("result");
+        if(a>b && a>c) {
+            result.innerHTML=a+"a is greater";
+        }
+        else if(b>a && b>c) {
+            result.innerHTML="b is greater  " + b;
+        }
+        else {
+            result.innerHTML=c+"c is greater";
+        }
+        return false;
+
+        }
+    </script>
+</body>
+</html>

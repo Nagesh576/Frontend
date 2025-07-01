@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>number between 50 to 100</h1>
+    <form action="" method="post">
+    Enter a value :<input type="text" name="a" id="a"><br>
+    <input type="submit" onclick="return calc()" value="check"><br>
+</form>
+<h2 id="result" ></h2>
+<script>
+    function calc() {
+        var x=Number(document.getElementById("a").value);
+        var result=document.getElementById("result");
+        if(x<50) {
+            result.innerHTML=x+"less than 50";
+        }
+        else if(x>=50 && x<100) {
+            result.innerHTML=x+"between 50 to 100";
+        }
+        else {
+            result.innerHTML=x+"greater than 100";
+        }
+
+        return false;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Greatest of Three Numbers</title>
+</head>
+<body>
+
+<h2>Find the Greatest Number</h2>
+
+<h2>Enter a:</h2><input type="text" id="a"><br><br>
+<h2>Enter b:</h2><input type="text" id="b"><br><br>
+<h2>Enter c:</h2><input type="text" id="c"><br><br>
+
+<button onclick="findGreatest()">Print Greatest Number</button>
+
+<p id="result"></p>
+
+<script>
+function findGreatest() {
+  const a = parseFloat(document.getElementById("a").value);
+  const b = parseFloat(document.getElementById("b").value);
+  const c = parseFloat(document.getElementById("c").value);
+
+  let greatest;
+
+  if (a >= b && a >= c) {
+    greatest = a;
+  } else if (b >= a && b >= c) {
+    greatest = b;
+  } else {
+    greatest = c;
+  }
+
+  document.getElementById("result").innerText = `The greatest number is: ${greatest}`;
+}
+</script>
+
+</body>
+</html>
+

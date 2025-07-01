@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object :
+        //An object is a real time entity,it has number of properties(key:value) and method (functions).
+        //object we can represent with in the curly brackets{} and using new keyword.
+
+        let student={name:'Nagesh',course:'AIML',fee:190000};
+        console.log(student)
+        console.log(student.name);
+        console.log(student.course);
+        console.log(student.fee);
+        console.log(student['name']);//Nagesh
+        console.log(student['course']);
+        console.log(student['fee']);
+
+        //add new key and value:
+        student.admno=576;
+        console.log(student);
+        student['contact']='8790588169'
+        console.log(student);
+        //modify object
+        student.name='Niranjan'
+        console.log(student);
+        student['name']='Siddu';
+        console.log(student);
+
+        //delete
+        delete student.admno;
+        console.log(student);
+
+        //getting only keys in the object
+        console.log(Object.keys(student));
+
+        //getting only values in the object
+        console.log(Object.values(student));
+
+        // getting pairs like entities
+        console.log(Object.entries(student));
+
+      let car={
+
+            name:'bmw',
+            color:'red',
+            model:2025,
+            price:50000,
+        start: function() {
+            return "my vehicle is started";
+        }
+    };
+
+        console.log(car.name);
+        console.log(car.color);
+        console.log(car.model);
+        console.log(car.price);
+        console.log(car.start());
+        
+        let student1= {
+            name:'Sanju',
+            age:20,
+            course:'webdev',
+            fee:15000,
+            address: {dist:'warangal',pin:5000045}
+
+        }
+        
+        //printing only district
+        console.log(student1.address.dist);
+        //object using 'new' keyword
+        let obj=new Object();
+        obj.a=10;
+        obj.b=20;
+        obj.sum=function()
+        {
+            return obj.a+obj.b;
+        }
+        console.log(obj.a);
+        console.log(obj.b);
+        console.log(obj.sum());
+    </script>
+    
+</body>
+</html>

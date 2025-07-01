@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter any Number</h1>
+    <form action="" method="post">
+        Enter a number:<input type="text" name="a" id="a"><br>
+        <input type="Submit" onclick="return cal()"><br>
+    </form>
+    <script>
+        function cal() {
+            var x = parseInt(document.getElementById("a").value);
+            if(x%2 == 0) {
+                document.write(x+ " is Even");
+            } else {
+                document.write(x + " is Odd");
+            }
+        }
+    </script>
+</body>
+</html>

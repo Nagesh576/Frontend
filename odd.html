@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+<button onclick="checkOddEven()">Check</button>
+<hr><hr>
+    <script>
+      function checkOddEven() {
+    const num = document.getElementById("numberInput").value;
+
+    if (num === "") {
+        console.log("Please enter a number.");
+        return;
+    }
+
+    if (num % 2 === 0) {
+        console.log(num + " is Even.");
+    } else {
+        console.log(num + " is Odd.");
+    }
+}
+
+    </script>
+    
+</body>
+</html>

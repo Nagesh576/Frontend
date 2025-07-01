@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome to MRU</h1>
+    <h2 id="result"></h2>
+    <script>
+        /*
+        //anonymous function
+        let addtwo=function(a,b)
+        {
+            return a+b;
+        }
+        console.log(addtwo(5,7));
+        //optional function
+        function addtwo(a,b)
+        {
+            if(b) {
+            return a+b
+            }
+            else {
+                a+10;
+            }
+
+        }
+        console.log(addtwo(4));
+
+        //default parameters/default functions:
+        function addtwo(a,b=10) {
+            if(b)
+            {
+                return a+b;
+            }
+
+        }
+        console.log(addtwo(5,6)); //11
+        console.log(addtwo(5)); //15
+
+
+
+        //arrow function
+        let sum=(a,b)=>{
+            return a+b;
+        }
+        console.log(sum(5,7)); //12
+        let multy=(x,y)=>x*y;
+        console.log(multy(5,4));
+
+
+         // closure function
+         // it is just like a inner function it ca access inside the function, out side function value and global value 
+        var a=10;
+        function myfun() 
+        {
+            var b=20
+            function myfun2() 
+            {
+                var c=30
+                console.log(a+b+c)
+            }
+            myfun2();
+            }
+
+            myfun();
+
+
+            //iife()
+            function myfun() {
+                document.write("hello");
+            }
+            mufun()
+
+            //(function {...........}) ();
+            //invoked function
+            (function() {
+                document.write("hellow");
+            })();
+            */
+
+
+
+            //callback() function
+            function myfun(name,callback)
+            {
+                console.log("hello",name);
+                callback();
+            }
+            function callme() {
+                console.log("it a callback function ")
+            }
+            myfun('babji',callme)
+
+    </script>
+</body>
+</html>

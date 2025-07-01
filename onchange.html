@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <title>onchange</title>
+    <header>WELCOME</header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width:device-width" initial scale="1">
+    <body>
+        <h1>welcome to mru!</h1>
+        <input type="checkbox" name="check" id="check" onchange="checkBtn()">Enable<br>
+        <button id="btn" disabled>disabled</button>
+        <script>
+            function checkBtn()
+            {
+                var x=document.getElementById("check").checked;
+                if(x==true)
+                {
+                    document.getElementById("btn").disabled=false;
+                }else{
+                    document.getElementById("btn").disabled=true;
+                }
+            }
+        </script>
+
+    </body>
+</html>
